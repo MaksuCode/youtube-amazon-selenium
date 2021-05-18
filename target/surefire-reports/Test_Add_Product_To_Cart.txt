@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: Test_Add_Product_To_Cart
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 6.845 s <<< FAILURE! - in Test_Add_Product_To_Cart
+select_a_product  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at Test_Add_Product_To_Cart.select_a_product(Test_Add_Product_To_Cart.java:26)
+
+add_product_to_cart  Time elapsed: 0.021 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mustafas-MacBook-Pro.local', ip: 'fe80:0:0:0:cbb:4796:c868:299c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/hw/417_kxvj6nl...}, goog:chromeOptions: {debuggerAddress: localhost:59782}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 863e823a0d9830a7955293082966a19d
+*** Element info: {Using=id, value=add-to-cart-button}
+	at Test_Add_Product_To_Cart.add_product_to_cart(Test_Add_Product_To_Cart.java:34)
+
+go_to_cart  Time elapsed: 1.293 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Product was not added to cart! ==> expected: <true> but was: <false>
+	at Test_Add_Product_To_Cart.go_to_cart(Test_Add_Product_To_Cart.java:44)
+
