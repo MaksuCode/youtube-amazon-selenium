@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
@@ -11,6 +12,7 @@ public class Test_Add_Product_To_Cart extends BaseTest {
 
     @Test
     @Order(1)
+//    @Disabled("Şuradaki bug yüzünden disable durumunda")
     public void search_a_product(){
         homePage = new HomePage(driver);
         homePage.acceptCookies();
