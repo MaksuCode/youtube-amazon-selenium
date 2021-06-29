@@ -1,7 +1,10 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import pages.CartPage;
+import pages.HomePage;
+import pages.ProductDetailPage;
+import pages.ProductsPage;
 
 public class Test_Add_Product_To_Cart extends BaseTest {
 
@@ -12,7 +15,7 @@ public class Test_Add_Product_To_Cart extends BaseTest {
 
     @Test
     @Order(1)
-//    @Disabled("Şuradaki bug yüzünden disable durumunda")
+//    @Disabled("Due to BUG-123 disabled")
     public void search_a_product(){
         homePage = new HomePage(driver);
         homePage.acceptCookies();
